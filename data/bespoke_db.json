@@ -1,0 +1,139 @@
+{
+  "users": [
+    {
+      "id": "USR-CUS-01",
+      "fullName": "Trần Minh Hoàng",
+      "email": "hoang.tran@bespoke.vn",
+      "phone": "0912 345 678",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+      "role": "KHACHHANG",
+      "status": "ACTIVE",
+      "createdAt": "2026-09-01T08:00:00.000Z"
+    },
+    {
+      "id": "USR-TLR-01",
+      "fullName": "Nghệ nhân Lê Văn Khang",
+      "email": "khang.tailor@bespoke.vn",
+      "phone": "0988 777 666",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+      "role": "THOMAY",
+      "status": "ACTIVE",
+      "createdAt": "2026-08-15T09:30:00.000Z",
+      "experienceYears": 18,
+      "specialty": "Cắt may Bespoke Vest & Quần Âu Sartorial Ý"
+    },
+    {
+      "id": "USR-ADM-01",
+      "fullName": "Quản trị viên Hệ Thống",
+      "email": "admin@bespoke.vn",
+      "phone": "0909 999 888",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=80",
+      "role": "ADMIN",
+      "status": "ACTIVE",
+      "createdAt": "2026-08-01T00:00:00.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "TEST-ORD-1791204450262",
+      "customerId": "USR-CUS-01",
+      "customerName": "Nguyễn Văn Kiểm Thử",
+      "customerPhone": "0901 234 567",
+      "suitItemName": "Kiểm Thử Suit 2D Cao Cấp",
+      "totalPrice": 15500000,
+      "stage": "MAY",
+      "status": "Đã chuyển khâu may",
+      "createdAt": "2026-10-05T12:47:30.262Z",
+      "updatedAt": "2026-10-05T12:47:30.263Z"
+    },
+    {
+      "id": "TEST-ORD-1791204039806",
+      "customerId": "USR-CUS-01",
+      "customerName": "Nguyễn Văn Kiểm Thử",
+      "customerPhone": "0901 234 567",
+      "suitItemName": "Kiểm Thử Suit 2D",
+      "totalPrice": 15500000,
+      "stage": "MAY",
+      "status": "Đã chuyển khâu may",
+      "createdAt": "2026-10-05T12:40:39.806Z",
+      "updatedAt": "2026-10-05T12:40:39.807Z"
+    },
+    {
+      "id": "ORD-2026-0891",
+      "createdAt": "2026-09-28T09:30:00.000Z",
+      "customerId": "USR-CUS-01",
+      "customerName": "Trần Minh Hoàng",
+      "customerPhone": "0912 345 678",
+      "customerEmail": "hoang.tran@bespoke.vn",
+      "shippingAddress": "Tòa nhà Landmark 81, P. 22, Q. Bình Thạnh, TP. Hồ Chí Minh",
+      "tailorId": "USR-TLR-01",
+      "tailorName": "Lê Văn Khang",
+      "suitItemName": "Âu phục Bespoke Wool Ý Hải Quân & Quần Âu Xếp Ly",
+      "fabricId": "fab-wool-navy-01",
+      "fabricName": "Dạ Len Ý Super 150s Midnight Navy",
+      "colorHex": "#1B263B",
+      "totalPrice": 16800000,
+      "paidAmount": 8400000,
+      "status": "DANG_MAY",
+      "stage": "MAY_MOC_THO",
+      "estimatedDeliveryDate": "2026-10-15",
+      "garmentView": "jacket",
+      "suitConfig": {
+        "suitPieceId": "2_piece",
+        "lapelId": "notch",
+        "lapelWidthId": "standard",
+        "buttonId": "single",
+        "necktieId": "silk_burgundy",
+        "trouserStyleId": "pleated",
+        "trouserRiseId": "standard_rise",
+        "trouserFitId": "regular",
+        "trouserPleatId": "single_pleat",
+        "trouserWaistbandId": "standard",
+        "trouserPocketId": "slanted",
+        "trouserCuffId": "no_cuff"
+      },
+      "measurements": {
+        "chest": 98,
+        "waist": 82,
+        "shoulder": 45,
+        "armLength": 61,
+        "suitLength": 74,
+        "trouserWaist": 83,
+        "trouserHip": 96,
+        "trouserOutseam": 101,
+        "trouserCrotch": 27,
+        "thigh": 56,
+        "ankle": 38,
+        "height": 175,
+        "weight": 68
+      }
+    }
+  ],
+  "measurements": {
+    "USR-CUS-01": {
+      "chest": 98,
+      "waist": 82,
+      "shoulder": 45,
+      "armLength": 61,
+      "suitLength": 74,
+      "trouserWaist": 83,
+      "trouserHip": 96,
+      "trouserOutseam": 101,
+      "trouserCrotch": 27,
+      "thigh": 56,
+      "ankle": 38,
+      "height": 175,
+      "weight": 68,
+      "postureNotes": "Vai hơi vuông nhẹ, lưng thẳng tự nhiên."
+    },
+    "TEST-USER-001": {
+      "chest": 102,
+      "waist": 86,
+      "shoulder": 47,
+      "sleeve": 63,
+      "updatedAt": "2026-10-05T12:47:30.265Z"
+    }
+  },
+  "fabrics": [],
+  "configs": {}
+}

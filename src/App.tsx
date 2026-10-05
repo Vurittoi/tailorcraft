@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
-import { Database, LogOut, ShoppingBag, User, X } from 'lucide-react';
-import { TechStackModal } from './components/TechStackModal';
+import { LogOut, ShoppingBag, User, X } from 'lucide-react';
 import { apiService } from './services/apiService';
 import {
   FABRIC_CATALOG,
@@ -290,7 +289,6 @@ export default function App() {
 
   // Trạng thái đóng/mở các Modal & Đơn hàng đang xem/chỉnh sửa
   const [isOrderSummaryModalOpen, setIsOrderSummaryModalOpen] = useState(false);
-  const [isTechStackOpen, setIsTechStackOpen] = useState(false);
   const [selectedOrderForDetail, setSelectedOrderForDetail] =
     useState<TailoringOrderRecord | null>(null);
   const [editingOrderId, setEditingOrderId] = useState<string | null>(null);
@@ -1008,18 +1006,6 @@ export default function App() {
           </nav>
 
           <div className="flex items-center gap-2.5 shrink-0">
-            {/* Nút Kiến trúc Công nghệ & Cơ sở dữ liệu (HTML5 Canvas, React, Node/Express, MongoDB/MySQL) */}
-            <button
-              type="button"
-              onClick={() => setIsTechStackOpen(true)}
-              className="px-3 py-2 text-xs font-medium border border-[#D8D4CC] bg-[#FAF9F6] text-[#141413] rounded-lg hover:border-[#8C6D46] hover:bg-[#F3EFEA] transition-colors flex items-center gap-1.5 whitespace-nowrap cursor-pointer shadow-2xs"
-              title="Xem Kiến trúc Công nghệ: HTML5 Canvas, React.js, Node.js & Express.js, MongoDB / MySQL"
-            >
-              <Database className="w-3.5 h-3.5 text-[#8C6D46]" />
-              <span className="hidden xl:inline font-semibold">Công nghệ & CSDL</span>
-              <span className="xl:hidden font-medium">CSDL</span>
-            </button>
-
             {/* Nút Tài khoản dẫn trực tiếp vào trang Cài đặt tài khoản (AccountSettingsPage.tsx) */}
             <button
               type="button"
@@ -1386,23 +1372,9 @@ export default function App() {
             >
               Cài đặt tài khoản
             </button>
-            <button
-              type="button"
-              onClick={() => setIsTechStackOpen(true)}
-              className="px-2.5 py-1 rounded bg-[#EFECE6] text-[#141413] font-medium hover:bg-[#E5E0D8] transition-colors flex items-center gap-1 cursor-pointer"
-            >
-              <Database className="w-3 h-3 text-[#8C6D46]" />
-              <span>Kiến trúc: Canvas • React • Node/Express • MongoDB/MySQL</span>
-            </button>
           </div>
         </div>
       </footer>
-
-      {/* MODAL KIẾN TRÚC CÔNG NGHỆ & CƠ SỞ DỮ LIỆU */}
-      <TechStackModal
-        isOpen={isTechStackOpen}
-        onClose={() => setIsTechStackOpen(false)}
-      />
     </div>
   );
 }
