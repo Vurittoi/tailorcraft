@@ -1,0 +1,6 @@
+{
+  "name": "Bespoke Suit Couture",
+  "description": "Hệ thống website may đo trang phục nam giới trực tuyến (Bespoke Tailoring Web System) với trình tùy chỉnh 2D Canvas thời gian thực và quản lý hồ sơ số đo cá nhân.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
