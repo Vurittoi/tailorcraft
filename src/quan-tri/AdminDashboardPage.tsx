@@ -75,9 +75,7 @@ export function AdminDashboardPage({
   const [formFabComposition, setFormFabComposition] = useState<string>(
     '100% Virgin Wool Super 150s'
   );
-  const [formFabWeave, setFormFabWeave] = useState<
-    'solid' | 'herringbone' | 'pinstripe'
-  >('solid');
+  const [formFabWeave, setFormFabWeave] = useState<FabricOption['defaultWeave']>('solid');
   const [formFabColorGroup, setFormFabColorGroup] =
     useState<FabricColorKey>('blue');
 

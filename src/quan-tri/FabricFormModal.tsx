@@ -16,9 +16,9 @@ interface FabricFormModalProps {
   setFormFabOrigin: React.Dispatch<React.SetStateAction<string>>;
   formFabComposition: string;
   setFormFabComposition: React.Dispatch<React.SetStateAction<string>>;
-  formFabWeave: 'solid' | 'herringbone' | 'pinstripe';
+  formFabWeave: FabricOption['defaultWeave'];
   setFormFabWeave: React.Dispatch<
-    React.SetStateAction<'solid' | 'herringbone' | 'pinstripe'>
+    React.SetStateAction<FabricOption['defaultWeave']>
   >;
   formFabColorGroup: FabricColorKey;
   setFormFabColorGroup: React.Dispatch<React.SetStateAction<FabricColorKey>>;
